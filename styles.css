@@ -1,0 +1,312 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, nav, section, footer {
+    padding: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  /* Navigation Styles */
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #000000;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  /* Banner Styles */
+  .banner {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #000000;
+  }
+  
+  /* Featured Products Styles */
+  .featured-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+/* Footer styles */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+}
+
+.footer-logo h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.footer-navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-navigation li {
+  margin-bottom: 10px;
+}
+
+.footer-navigation a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-navigation a:hover {
+  color: #ffc107;
+}
+
+.footer-contact p {
+  margin: 10px 0;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffc107;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Add any additional styles you want to customize the appearance of the footer */
+
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes growIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .banner h2 {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .banner p, .button {
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  .featured-products {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .product-card {
+    animation: growIn 0.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: calc(0.2s * var(--index));
+  }
+  
+  /* Unique Animations for Each Product Card */
+  .product-card:nth-child(1) {
+    --index: 1;
+  }
+  
+  .product-card:nth-child(2) {
+    --index: 2;
+  }
+  
+  .product-card:nth-child(3) {
+    --index: 3;
+  }
+
+  /* Updated CSS for Product Cards */
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-card {
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  /* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url('white-background-with-small-specks-word-dust-it_664601-2395.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.register-form, .login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.register-form h2, .login-form h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.register-form label, .login-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.register-form input, .login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-form .button, .login-form .button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.register-form .button:hover, .login-form .button:hover {
+  background-color: #0056b3;
+}
+
+  
